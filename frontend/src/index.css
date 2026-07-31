@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Graphite Tactical Theme Tokens */
+  --bg-app: #121417;
+  --panel-bg: #1A1D24;
+  --panel-card: #242831;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(20, 184, 166, 0.4);
+  
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-dim: #64748B;
+  
+  /* Signature Accent */
+  --accent-ops: #14B8A6;
+  --accent-ops-glow: rgba(20, 184, 166, 0.25);
+  --accent-ops-bg: rgba(20, 184, 166, 0.12);
+
+  /* Semantic Event Markers */
+  --color-kill: #EF4444;
+  --color-killed: #F43F5E;
+  --color-storm: #A855F7;
+  --color-loot: #F59E0B;
+
+  /* Path Styles */
+  --color-human-path: #14B8A6;
+  --color-bot-path: #64748B;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  user-select: none;
+}
+
+/* Panel surface styling */
+.panel-surface {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Card surface styling */
+.card-surface {
+  background-color: var(--panel-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-ops);
+}

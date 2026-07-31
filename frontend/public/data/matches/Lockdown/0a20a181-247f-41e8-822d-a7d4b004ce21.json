@@ -1,0 +1,39 @@
+{
+    "match_id": "0a20a181-247f-41e8-822d-a7d4b004ce21",
+    "map_id": "Lockdown",
+    "date": "February_13",
+    "duration_ms": 40,
+    "player_count": 1,
+    "human_count": 1,
+    "bot_count": 0,
+    "players": [
+        {
+            "user_id": "b3340cc5-c9fa-4108-b56d-0728bc978a22",
+            "is_bot": false,
+            "path": {
+                "ts": [
+                    0,
+                    35
+                ],
+                "px": [
+                    273.29998779296875,
+                    271.0
+                ],
+                "py": [
+                    317.29998779296875,
+                    319.1000061035156
+                ]
+            }
+        }
+    ],
+    "events": [
+        {
+            "ts": 40,
+            "user_id": "b3340cc5-c9fa-4108-b56d-0728bc978a22",
+            "is_bot": false,
+            "type": "BotKilled",
+            "px": 271.0,
+            "py": 319.1
+        }
+    ]
+}
