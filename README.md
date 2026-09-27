@@ -1,4 +1,43 @@
-# 🎮 LILA BLACK - Player Journey Telemetry & Visualization Tool
+# Player Journey Telemetry — LILA BLACK
+
+**Explore match recordings through map playback, event filters, and spatial heatmaps.**
+
+A React and TypeScript interface backed by a Python pipeline that converts Parquet telemetry into browser-readable data. Created as a LILA Games assignment.
+
+[Open live demo](https://lila-black-telemetry.vercel.app/) · [Architecture](ARCHITECTURE.md) · [Analysis notes](INSIGHTS.md)
+
+## Try it in one minute
+
+1. Open the demo and choose a map.
+2. Select a match and press Play.
+3. Adjust playback speed and toggle the available heatmap layers.
+4. Compare movement and event patterns across matches.
+
+The deployed demo may evolve separately from this repository. Use the local setup below when evaluating the checked-in implementation.
+
+## Engineering highlights
+
+| Area | Implementation |
+| --- | --- |
+| Data preparation | Python processing of Parquet telemetry into match and map summaries. |
+| Interactive interface | React, TypeScript, playback controls, and event filtering. |
+| Spatial visualization | Coordinate conversion, path rendering, and density overlays. |
+| Analysis | Separate architecture and insight documents explain the approach. |
+
+## Run the checked-in frontend
+
+```bash
+git clone https://github.com/Ram1008/LeelaGames-Assignment.git
+cd LeelaGames-Assignment/frontend
+npm install
+npm run dev
+```
+
+For data regeneration and detailed implementation notes, expand the guide below.
+
+<details>
+<summary>Data pipeline, features, and full setup guide</summary>
+
 
 An end-to-end telemetry pipeline and interactive web-based player journey visualization tool built for **LILA Games - Assignment**.
 
@@ -136,3 +175,4 @@ Leela-Assignment/
 
 ## 🌐 Live Deployment
 Deployed on Vercel: [https://lila-black-telemetry.vercel.app](https://lila-black-telemetry.vercel.app)
+</details>
