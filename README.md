@@ -6,6 +6,10 @@ A React and TypeScript interface backed by a Python pipeline that converts Parqu
 
 [Open live demo](https://lila-black-telemetry.vercel.app/) · [Architecture](ARCHITECTURE.md) · [Analysis notes](INSIGHTS.md)
 
+![Live telemetry demo with traffic heatmap on AmbroseValley](docs/images/telemetry-demo.png)
+
+*Actual public demo captured on 27 September 2026. The deployed interface may differ from the checked-in version.*
+
 ## Try it in one minute
 
 1. Open the demo and choose a map.
